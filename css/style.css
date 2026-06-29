@@ -21,8 +21,13 @@ nav {
     padding: 20px 80px;
 
     background-color: #1E293B;
-}
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 /* Logo */
 .logo {
     font-size: 28px;
@@ -48,3 +53,79 @@ nav ul li a {
 nav ul li a:hover {
     color: #38BDF8;
 }
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 80px;
+    min-height: 90vh;
+}
+
+.hero-content {
+    width: 55%;
+}
+
+.intro {
+    font-size: 20px;
+    color: #38BDF8;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 32px;
+    color: #94A3B8;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #38BDF8;
+    color: #0F172A;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid #38BDF8;
+    color: #38BDF8;
+}
+
+.btn-secondary:hover {
+    background: #38BDF8;
+    color: #0F172A;
+}
+
+.hero-image img {
+    width: 350px;
+    border-radius: 50%;
+    border: 5px solid #38BDF8;
+}   

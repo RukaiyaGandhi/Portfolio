@@ -4,63 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Rukaiya Gandhi | Portfolio</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
 </head>
 
 <body>
 
+    <!-- ================= NAVBAR ================= -->
+
     <header>
+
         <nav>
-            <h2 class="logo">RG</h2>
+
+            <div class="logo">
+                RG
+            </div>
 
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#education">Education</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
+    <!-- ================= HERO ================= -->
 
-    <section class="hero">
+    <section class="hero" id="home">
+
 
         <div class="hero-content">
 
-            <p class="intro">Hello, I'm</p>
+            <p class="intro">Hello, I'm 👋</p>
 
             <h1>Rukaiya Gandhi</h1>
 
             <h2>Java Full Stack Developer</h2>
 
             <p class="description">
-                I build responsive web applications using Java, Spring Boot,
-                HTML, CSS, JavaScript, and MySQL. I enjoy solving real-world
-                problems and continuously learning new technologies.
+
+                Passionate Java Full Stack Developer with experience in building responsive web applications using Java,
+                Spring Boot, HTML, CSS, JavaScript, and MySQL.
+
             </p>
 
             <div class="hero-buttons">
-                <a href="#" class="btn-primary">Hire Me</a>
-                <a href="#" class="btn-secondary">Download Resume</a>
-            </div>
 
+                <a href="#contact" class="btn-primary">Contact Me</a>
+
+                <a href="assets/resume.pdf" download class="btn-secondary">
+
+                    Download Resume
+
+                </a>
+
+            </div>
+            <div class="social-icons">
+
+                <a href="https://github.com/yourusername" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:your@email.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
         </div>
 
         <div class="hero-image">
 
-            <img src="images/Profile.jpg" alt="Profile Picture">
+            <img src="images/profile.jpg" alt="Profile">
 
         </div>
 
     </section>
 
-    <section id="about" class="about">
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
 
         <div class="about-image">
-            <img src="images/profile.jpg" alt="Rukaiya Gandhi">
+
+            <img src="images/profile.jpg" alt="Profile">
+
         </div>
 
         <div class="about-content">
@@ -68,10 +122,10 @@
             <h2>About Me</h2>
 
             <p>
-                I'm a passionate Java Full Stack Developer with a strong interest
-                in building responsive and user-friendly web applications.
-                I enjoy solving real-world problems and continuously learning
-                new technologies to improve my skills.
+
+                I enjoy building clean and responsive web applications.
+                My goal is to become a skilled Full Stack Java Developer and contribute to impactful software solutions.
+
             </p>
 
             <div class="about-details">
@@ -80,98 +134,162 @@
 
                 <p><strong>Role:</strong> Java Full Stack Developer</p>
 
-                <p><strong>Email:</strong> your-email@example.com</p>
-
                 <p><strong>Location:</strong> India</p>
+
+                <p><strong>Email:</strong> your-email@example.com</p>
 
             </div>
 
         </div>
 
     </section>
-    <section id="skills" class="skills">
+
+    <!-- ================= SKILLS ================= -->
+
+    <section class="skills" id="skills">
 
         <h2 class="section-title">My Skills</h2>
 
         <div class="skills-container">
 
             <div class="skill-card">
+
                 <h3>Frontend</h3>
 
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                </ul>
+                <div class="progress">
+
+                    <span>HTML</span>
+
+                    <div class="bar">
+                        <div class="fill html"></div>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+
+                    <span>CSS</span>
+
+                    <div class="bar">
+                        <div class="fill css"></div>
+                    </div>
+
+                </div>
+
+                <div class="progress">
+
+                    <span>JavaScript</span>
+
+                    <div class="bar">
+                        <div class="fill js"></div>
+                    </div>
+
+                </div>
+
             </div>
 
             <div class="skill-card">
+
                 <h3>Backend</h3>
 
                 <ul>
+
                     <li>Java</li>
+
                     <li>Spring Boot</li>
+
+                    <li>Spring MVC</li>
+
                     <li>JDBC</li>
+
                 </ul>
+
             </div>
 
             <div class="skill-card">
+
                 <h3>Database</h3>
 
                 <ul>
+
                     <li>MySQL</li>
+
                     <li>Oracle SQL</li>
+
                 </ul>
+
             </div>
 
             <div class="skill-card">
+
                 <h3>Tools</h3>
 
                 <ul>
+
                     <li>Git</li>
+
                     <li>GitHub</li>
+
                     <li>VS Code</li>
+
+                    <li>Eclipse</li>
+
                 </ul>
+
             </div>
 
         </div>
 
     </section>
 
-    <section id="projects" class="projects">
+    <!-- ================= PROJECTS ================= -->
 
-        <h2 class="section-title">My Projects</h2>
+    <section class="projects" id="projects">
+
+        <h2 class="section-title">Projects</h2>
 
         <div class="projects-container">
 
             <div class="project-card">
 
+                <img src="images/project1.png" alt="Portfolio">
+
                 <h3>Portfolio Website</h3>
 
                 <p>
-                    A personal portfolio website built using HTML, CSS, and JavaScript
-                    to showcase my skills, projects, and contact information.
+
+                    Responsive portfolio website built using HTML, CSS and JavaScript.
+
                 </p>
 
                 <div class="project-links">
+
                     <a href="#">GitHub</a>
+
                     <a href="#">Live Demo</a>
+
                 </div>
 
             </div>
 
             <div class="project-card">
 
+                <img src="images/project2.png" alt="Hospital">
+
                 <h3>Hospital Management System</h3>
 
                 <p>
-                    A Java Full Stack application developed using Spring Boot,
-                    MySQL, HTML, CSS, and JavaScript for managing hospital operations.
+
+                    Java Full Stack application using Spring Boot and MySQL.
+
                 </p>
 
                 <div class="project-links">
+
                     <a href="#">GitHub</a>
+
                     <a href="#">Live Demo</a>
+
                 </div>
 
             </div>
@@ -180,6 +298,55 @@
 
     </section>
 
+    <!-- ================= EDUCATION ================= -->
+
+    <section class="education" id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <h3>Bachelor's Degree</h3>
+
+            <p>Your College Name</p>
+
+            <p>Graduation Year</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Rukaiya Gandhi | All Rights Reserved
+
+        </p>
+
+    </footer>
 
     <script src="js/script.js"></script>
 
